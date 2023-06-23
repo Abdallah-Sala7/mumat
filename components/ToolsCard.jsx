@@ -12,7 +12,7 @@ const ToolsCard = ({img, name}) => {
         className="w-10 h-10 object-contain"
       />
 
-      <h3 className="text-dark text-sm font-semibold">{name}</h3>
+      <h3 className="text-dark text-sm font-semibold capitalize">{name}</h3>
     </div>
   );
 }

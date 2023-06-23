@@ -10,13 +10,20 @@ import {
   webDevImg,
   onlineShopImg,
   webDevGif,
-  heroGif,
   xdImg,
   figmaImg,
   illustratorImg,
+  reactImg,
+  vueImg,
+  javaScriptImg,
+  flutterImg,
+  dotnetImg,
+  pythonImg,
+  androidStudio,
 } from "../assets";
 import ServicesCard from "../components/ServicesCard";
 import ToolsCard from "../components/ToolsCard";
+import FeaturesCard from "../components/FeaturesCard";
 
 export default function Home() {
   return (
@@ -24,15 +31,15 @@ export default function Home() {
       <header className="min-h-screen flex items-center py-24">
         <div className="container">
           <div className="flex justify-between items-center flex-wrap">
-            <div className="flex-1 text-center px-5 md:pl-0 md:pr-10 md:text-left">
-              <h1 className="text-5xl font-bold leading-tight text-dark capitalize mb-8">
+            <div className="flex-1 text-center md:pl-0 md:pr-10 md:text-left">
+              <h1 className="text-3xl mb-5 font-bold text-dark capitalize md:mb-8 md:text-5xl">
                 We Can Make Your Ideas A{" "}
                 <span className="text-transparent from-dark to-primary bg-gradient-to-br bg-clip-text">
                   Reality
                 </span>
               </h1>
 
-              <p className="text-dark text-lg leading-8 mb-8">
+              <p className="mb-5 text-dark leading-7 md:text-lg md:mb-8">
                 We turn your ideas into reality. Participate with us to make
                 your project digital through innovation and technology.
               </p>
@@ -40,9 +47,9 @@ export default function Home() {
               <a
                 href="#"
                 className={`
-                  relative z-10 bg-dark px-8 py-4 rounded-xl shadow-lg overflow-hidden 
+                  relative z-10 bg-dark px-6 py-3  rounded-xl shadow-lg overflow-hidden 
                   text-primary font-medium text-lg ransition-colors flex w-fit mx-auto md:mx-0
-                  after:absolute after:inset-0 after:-z-10 after:opacity-20 
+                  md:px-8 md:py-4 after:absolute after:inset-0 after:-z-10 after:opacity-20 
                   after:from-dark after:to-primary after:bg-gradient-to-r
                   after:translate-x-full after:transition-all hover:after:translate-x-0
                 `}
@@ -67,7 +74,7 @@ export default function Home() {
       <section className="py-6">
         <div className="container">
           <div className="mb-12 m-auto md:w-1/2">
-            <h1 className="text-4xl font-bold text-center text-dark capitalize mb-3">
+            <h1 className="text-3xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
               Why cooperate with MUMAT
             </h1>
 
@@ -78,92 +85,38 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap gap-5">
-            <div className="flex-auto w-52 border border-neutral-50 rounded-lg  bg-blue-50 bg-opacity-50 py-5 px-4 transition-transform hover:shadow-sm hover:scale-105">
-              <div className="flex items-center gap-3 mb-3">
-                <Image
-                  src={securityImg}
-                  alt="security"
-                  width={500}
-                  height={500}
-                  className="w-8 h-8 object-contain"
-                />
+            <FeaturesCard
+              img={securityImg}
+              color="bg-blue-50 bg-opacity-50"
+              title="security"
+              desc="We strive to provide innovative and effective technological solutions to our customers, where we care about their security and follow the highest security standards to protect their data."
+            />
 
-                <h2 className="text-xl font-bold text-dark capitalize">
-                  security
-                </h2>
-              </div>
-
-              <p className="text-dark text-sm">
-                We strive to provide innovative and effective technological
-                solutions to our customers, where we care about their security
-                and follow the highest security standards to protect their data.
-              </p>
-            </div>
-
-            <div className="flex-auto w-52 border border-neutral-50 rounded-lg  bg-dark bg-opacity-5 py-5 px-4 transition-transform hover:shadow-sm hover:scale-105">
-              <div className="flex items-center gap-3 mb-3">
-                <Image
-                  src={deadlineImg}
-                  alt="security"
-                  width={500}
-                  height={500}
-                  className="w-8 h-8 object-contain"
-                />
-
-                <h2 className="text-xl font-bold text-dark capitalize">
-                  Speed
-                </h2>
-              </div>
-
-              <p className="text-dark text-sm">
-                Technology can help improve businesses. Therefore, we are
+            <FeaturesCard
+              img={deadlineImg}
+              color="bg-dark bg-opacity-5"
+              title="Speed"
+              desc="Technology can help improve businesses. Therefore, we are
                 committed to providing fast and efficient services to our
-                customers to meet their needs as quickly as possible.
-              </p>
-            </div>
+                customers to meet their needs as quickly as possible."
+            />
 
-            <div className="flex-auto w-52 border border-neutral-50 rounded-lg  bg-primary bg-opacity-10 py-5 px-4 transition-transform hover:shadow-sm hover:scale-105">
-              <div className="flex items-center gap-3 mb-3">
-                <Image
-                  src={ideaImg}
-                  alt="security"
-                  width={500}
-                  height={500}
-                  className="w-8 h-8 object-contain"
-                />
-
-                <h2 className="text-xl font-bold text-dark capitalize">
-                  innovative solutions
-                </h2>
-              </div>
-
-              <p className="text-dark text-sm">
-                We are distinguished in the field of design and development with
+            <FeaturesCard
+              img={ideaImg}
+              color="bg-primary bg-opacity-10"
+              title="innovative solutions"
+              desc="We are distinguished in the field of design and development with
                 innovative solutions that we provide to make our projects of the
-                highest degree of efficiency and quality
-              </p>
-            </div>
+                highest degree of efficiency and quality"
+            />
 
-            <div className="flex-auto w-52 border border-neutral-50 rounded-lg  bg-dark bg-opacity-10 py-5 px-4 transition-transform hover:shadow-sm hover:scale-105">
-              <div className="flex items-center gap-3 mb-3">
-                <Image
-                  src={technicalImg}
-                  alt="security"
-                  width={500}
-                  height={500}
-                  className="w-8 h-8 object-contain"
-                />
-
-                <h2 className="text-xl font-bold text-dark capitalize">
-                  technical support
-                </h2>
-              </div>
-
-              <p className="text-dark text-sm">
-                Always ready to serve our customers and answer all questions and
-                inquiries as quickly as possible
-              </p>
-            </div>
+            <FeaturesCard
+              img={technicalImg}
+              color="bg-dark bg-opacity-10"
+              title="technical support"
+              desc="Always ready to serve our customers and answer all questions and
+                inquiries as quickly as possible"
+            />
           </div>
         </div>
       </section>
@@ -171,7 +124,7 @@ export default function Home() {
       <section className="py-6">
         <div className="container">
           <div className="mb-12 m-auto md:w-1/2">
-            <h1 className="text-4xl font-bold text-center text-dark capitalize mb-3">
+            <h1 className="text-3xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
               Discover Our Services
             </h1>
 
@@ -234,20 +187,18 @@ export default function Home() {
                 what our clients get at the end.
               </p>
 
-              <div className="flex gap-3">
-                <a
-                  href="#"
-                  className={`
-                  relative z-10 bg-dark px-8 py-4 rounded-xl shadow-lg overflow-hidden 
-                  text-primary font-medium text-lg ransition-colors flex w-fit mx-auto md:mx-0
-                  after:absolute after:inset-0 after:-z-10 after:opacity-20 
+              <a
+                href="#"
+                className={`
+                  relative z-10 bg-dark px-6 py-3  rounded-xl shadow-lg overflow-hidden 
+                  text-primary font-medium text-lg ransition-colors flex w-fit
+                  md:px-8 md:py-4 after:absolute after:inset-0 after:-z-10 after:opacity-20 
                   after:from-dark after:to-primary after:bg-gradient-to-r
                   after:translate-x-full after:transition-all hover:after:translate-x-0
                 `}
-                >
-                  Get Started
-                </a>
-              </div>
+              >
+                Get Started
+              </a>
             </div>
 
             <div className="w-full md:w-3/5">
@@ -266,7 +217,7 @@ export default function Home() {
       <section className="py-6">
         <div className="container">
           <div className="mb-12 m-auto md:w-1/2">
-            <h1 className="text-4xl font-bold text-center text-dark capitalize mb-3">
+            <h1 className="text-3xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
               Technologies and Tools
             </h1>
 
@@ -282,48 +233,46 @@ export default function Home() {
                 design
               </h2>
 
-              <div className="flex flex-wrap gap-8">
+              <div className="flex flex-wrap gap-5 md:gap-8">
                 <ToolsCard name={"Adobe XD"} img={xdImg} />
                 <ToolsCard img={figmaImg} name={"Figma"} />
-
                 <ToolsCard img={illustratorImg} name={"Illustrator"} />
               </div>
             </div>
 
             <div className="flex-auto w-full px-5 py-4 border border-stone-100 rounded-lg md:w-2/5">
               <h2 className="text-xl font-bold text-dark capitalize mb-8">
-                design
+                web development
               </h2>
 
-              <div className="flex flex-wrap gap-8">
-                <ToolsCard name={"Adobe XD"} img={xdImg} />
-                <ToolsCard img={figmaImg} name={"Figma"} />
+              <div className="flex flex-wrap gap-5 md:gap-8">
+                <ToolsCard name={"react"} img={reactImg} />
+                <ToolsCard img={vueImg} name={"vue"} />
 
-                <ToolsCard img={illustratorImg} name={"Illustrator"} />
+                <ToolsCard img={javaScriptImg} name={"javascript"} />
               </div>
             </div>
 
             <div className="flex-auto w-full px-5 py-4 border border-stone-100 rounded-lg md:w-2/5">
               <h2 className="text-xl font-bold text-dark capitalize mb-8">
-                design
+                mobile development
               </h2>
 
-              <div className="flex flex-wrap gap-8">
-                <ToolsCard name={"Adobe XD"} img={xdImg} />
-                <ToolsCard img={figmaImg} name={"Figma"} />
-
-                <ToolsCard img={illustratorImg} name={"Illustrator"} />
+              <div className="flex flex-wrap gap-5 md:gap-8">
+                <ToolsCard name={"flutter"} img={flutterImg} />
+                <ToolsCard img={reactImg} name={"react native"} />
+                <ToolsCard img={androidStudio} name={"android studio"} />
               </div>
             </div>
 
             <div className="flex-auto w-full px-5 py-4 border border-stone-100 rounded-lg md:w-2/5">
               <h2 className="text-xl font-bold text-dark capitalize mb-8">
-                design
+                backend development
               </h2>
 
-              <div className="flex flex-wrap gap-8">
-                <ToolsCard name={"Adobe XD"} img={xdImg} />
-                <ToolsCard img={figmaImg} name={"Figma"} />
+              <div className="flex flex-wrap gap-5 md:gap-8">
+                <ToolsCard name={"dot net"} img={dotnetImg} />
+                <ToolsCard img={pythonImg} name={"python"} />
 
                 <ToolsCard img={illustratorImg} name={"Illustrator"} />
               </div>
