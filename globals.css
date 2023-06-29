@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+  .filterPrimary{
+    filter: invert(97%) sepia(18%) saturate(3105%) hue-rotate(155deg) brightness(97%) contrast(103%);
+  }
+}

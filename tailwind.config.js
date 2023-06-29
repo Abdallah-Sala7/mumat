@@ -10,10 +10,10 @@ module.exports = {
         primary: "#76fce9",
         dark: "#0b132a",
       },
-      container:{
+      container: {
         center: true,
         padding: "1rem",
-      }
+      },
     },
   },
   plugins: [],

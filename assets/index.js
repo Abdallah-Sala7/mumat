@@ -9,7 +9,8 @@ export { default as mobileAppImg } from "./images/mobile-app.png";
 
 
 export {default as heroImg} from "./images/hero.svg";
-
+export { default as projectImg } from "./images/project_img.webp";
+export { default as project2Img } from "./images/project2_img.webp";
 
 // export gif images
 
@@ -30,3 +31,6 @@ export { default as flutterImg } from "./images/tool-icon/flutter.png";
 export { default as androidStudio } from "./images/tool-icon/android_studio.png";
 
 
+// export icons
+
+export { default as rightArrowIcon } from "./icons/right_arrow.png";

@@ -3,7 +3,10 @@ import React from 'react'
 
 const ToolsCard = ({img, name}) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 transition-transform duration-300 hover:-translate-y-1">
+    <div
+      className="flex flex-col items-center justify-center gap-3 transition-transform duration-300 hover:-translate-y-1"
+      data-aos="flip-right"
+    >
       <Image
         src={img}
         alt={name}

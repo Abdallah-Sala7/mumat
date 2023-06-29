@@ -5,6 +5,7 @@ const FeaturesCard = ({ img, color, title, desc }) => {
   return (
     <div
       className={`flex-auto w-52 border border-neutral-50 rounded-lg py-5 px-4 transition-transform hover:-translate-y-1 ${color}`}
+      data-aos="fade-up"
     >
       <div className="flex items-center gap-3 mb-3">
         <Image

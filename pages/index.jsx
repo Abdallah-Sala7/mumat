@@ -20,10 +20,13 @@ import {
   dotnetImg,
   pythonImg,
   androidStudio,
+  projectImg,
+  project2Img,
 } from "../assets";
 import ServicesCard from "../components/ServicesCard";
 import ToolsCard from "../components/ToolsCard";
 import FeaturesCard from "../components/FeaturesCard";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   return (
@@ -32,20 +35,33 @@ export default function Home() {
         <div className="container">
           <div className="flex justify-between items-center flex-wrap">
             <div className="flex-1 text-center md:pl-0 md:pr-10 md:text-left">
-              <h1 className="text-3xl mb-5 font-bold text-dark capitalize md:mb-8 md:text-5xl">
+              <h1
+                className="text-3xl mb-5 font-bold text-dark capitalize md:mb-8 md:text-5xl"
+                data-aos="fade-right"
+                data-aos-duration="300"
+              >
                 We Can Make Your Ideas A{" "}
-                <span className="text-transparent from-dark to-primary bg-gradient-to-br bg-clip-text">
+                <span
+                  className="text-transparent from-dark to-primary bg-gradient-to-br bg-clip-text"
+                  data-aos="fade-right"
+                >
                   Reality
                 </span>
               </h1>
 
-              <p className="mb-5 text-dark leading-7 md:text-lg md:mb-8">
+              <p
+                className="mb-5 text-dark leading-7 md:text-lg md:mb-8"
+                data-aos="fade-right"
+                data-aos-duration="600"
+              >
                 We turn your ideas into reality. Participate with us to make
                 your project digital through innovation and technology.
               </p>
 
               <a
                 href="#"
+                data-aos="fade-right"
+                data-aos-duration="900"
                 className={`
                   relative z-10 bg-dark px-6 py-3  rounded-xl shadow-lg overflow-hidden 
                   text-primary font-medium text-lg ransition-colors flex w-fit mx-auto md:mx-0
@@ -58,7 +74,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="w-full md:flex-1">
+            <div className="w-full md:flex-1" data-aos="fade-up">
               <Image
                 src={heroImg}
                 alt="Hero Image"
@@ -73,7 +89,7 @@ export default function Home() {
 
       <section className="py-6">
         <div className="container">
-          <div className="mb-12 m-auto md:w-1/2">
+          <div className="mb-12 m-auto md:w-1/2" data-aos="zoom-in">
             <h1 className="text-3xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
               Why cooperate with MUMAT
             </h1>
@@ -123,7 +139,7 @@ export default function Home() {
 
       <section className="py-6">
         <div className="container">
-          <div className="mb-12 m-auto md:w-1/2">
+          <div className="mb-12 m-auto md:w-1/2" data-aos="zoom-in">
             <h1 className="text-3xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
               Discover Our Services
             </h1>
@@ -162,25 +178,55 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-6">
+        <div className="container">
+          <div className="mb-12 m-auto md:w-1/2" data-aos="zoom-in">
+            <h1 className="text-3xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
+              Discover Our Services
+            </h1>
+
+            <p className="text-dark text-center">
+              Turning your ideas into cutting-edge technologies. Turning your
+              ideas into cutting-edge technologies
+            </p>
+          </div>
+
+          <ProjectCard img={projectImg} />
+          <ProjectCard img={project2Img} right />
+          <ProjectCard img={projectImg} />
+        </div>
+      </section>
+
       <section className="py-6 my-6 bg-dark bg-opacity-5">
         <div className="container">
           <div className="flex justify-between items-center flex-wrap">
             <div className="w-full md:w-2/5">
-              <h1 className="text-4xl font-bold capitalize mb-8">
+              <h1
+                className="text-4xl font-bold capitalize mb-8"
+                data-aos="fade-right"
+              >
                 <span className="text-dark">We are </span>
                 <span className="from-dark to-primary bg-gradient-to-br bg-clip-text text-transparent">
                   MUMAT
                 </span>
               </h1>
 
-              <p className="text-dark mb-8 text-lg leading-8">
+              <p
+                className="text-dark mb-8 text-lg leading-8"
+                data-aos="fade-right"
+                data-aos-delay="150"
+              >
                 We are a team of professional developers and designers who
                 provide the best solutions for your business. We are a team of
                 professional developers and designers who provide the best
                 solutions for your business.
               </p>
 
-              <p className="text-dark mb-8 text-lg leading-8">
+              <p
+                className="text-dark mb-8 text-lg leading-8"
+                data-aos="fade-right"
+                data-aos-delay="300"
+              >
                 Our team of specialized experts always succeeds in helping
                 clients reach their goals. We’re following the best practice
                 framework in software industry to guarantee the best results in
@@ -189,6 +235,8 @@ export default function Home() {
 
               <a
                 href="#"
+                data-aos="fade-right"
+                data-aos-delay="450"
                 className={`
                   relative z-10 bg-dark px-6 py-3  rounded-xl shadow-lg overflow-hidden 
                   text-primary font-medium text-lg ransition-colors flex w-fit
@@ -201,7 +249,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="w-full md:w-3/5">
+            <div className="w-full md:w-3/5" data-aos="fade-left">
               <Image
                 src={webDevGif}
                 alt="about"
@@ -216,7 +264,7 @@ export default function Home() {
 
       <section className="py-6">
         <div className="container">
-          <div className="mb-12 m-auto md:w-1/2">
+          <div className="mb-12 m-auto md:w-1/2" data-aos="zoom-in">
             <h1 className="text-3xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
               Technologies and Tools
             </h1>
