@@ -31,14 +31,13 @@ import ProjectCard from "../components/ProjectCard";
 export default function Home() {
   return (
     <>
-      <header className="min-h-screen flex items-center pb-6">
+      <header className="pb-6">
         <div className="container">
           <div className="flex justify-between items-center flex-wrap">
             <div className="flex-1 text-center md:pl-0 md:pr-10 md:text-left">
               <h1
                 className="text-3xl mb-5 font-bold text-dark capitalize md:mb-8 md:text-5xl"
                 data-aos="fade-right"
-                data-aos-duration="300"
               >
                 We Can Make Your Ideas A{" "}
                 <span
@@ -52,7 +51,7 @@ export default function Home() {
               <p
                 className="mb-5 text-dark leading-7 md:text-lg md:mb-8"
                 data-aos="fade-right"
-                data-aos-duration="600"
+                data-aos-delay="300"
               >
                 We turn your ideas into reality. Participate with us to make
                 your project digital through innovation and technology.
@@ -61,7 +60,7 @@ export default function Home() {
               <a
                 href="#"
                 data-aos="fade-right"
-                data-aos-duration="900"
+                data-aos-delay="600"
                 className={`
                   relative z-10 bg-dark px-6 py-3  rounded-xl shadow-lg overflow-hidden 
                   text-primary font-medium text-lg ransition-colors flex w-fit mx-auto md:mx-0
@@ -90,11 +89,11 @@ export default function Home() {
       <section className="py-6">
         <div className="container">
           <div className="mb-12 m-auto md:w-1/2" data-aos="zoom-in">
-            <h1 className="text-3xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
+            <h1 className="text-2xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
               Why cooperate with MUMAT
             </h1>
 
-            <p className="text-dark text-center">
+            <p className="text-dark text-center text-sm sm:text-base">
               Designing your project with MUMAT will certainly be creative,
               different and the reason why you are at the top of your business.{" "}
             </p>
@@ -140,11 +139,11 @@ export default function Home() {
       <section className="py-6">
         <div className="container">
           <div className="mb-12 m-auto md:w-1/2" data-aos="zoom-in">
-            <h1 className="text-3xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
+            <h1 className="text-2xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
               Discover Our Services
             </h1>
 
-            <p className="text-dark text-center">
+            <p className="text-dark text-center text-sm sm:text-base">
               Turning your ideas into cutting-edge technologies. Turning your
               ideas into cutting-edge technologies
             </p>
@@ -181,11 +180,11 @@ export default function Home() {
       <section className="py-6">
         <div className="container">
           <div className="mb-12 m-auto md:w-1/2" data-aos="zoom-in">
-            <h1 className="text-3xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
+            <h1 className="text-2xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
               Discover Our Services
             </h1>
 
-            <p className="text-dark text-center">
+            <p className="text-dark text-center text-sm sm:text-base">
               Turning your ideas into cutting-edge technologies. Turning your
               ideas into cutting-edge technologies
             </p>
@@ -202,7 +201,7 @@ export default function Home() {
           <div className="flex justify-between items-center flex-wrap">
             <div className="w-full md:w-2/5">
               <h1
-                className="text-4xl font-bold capitalize mb-8"
+                className="text-4xl font-bold capitalize mb-5 md:mb-8"
                 data-aos="fade-right"
               >
                 <span className="text-dark">We are </span>
@@ -212,7 +211,7 @@ export default function Home() {
               </h1>
 
               <p
-                className="text-dark mb-8 text-lg leading-8"
+                className="text-dark mb-5 md:mb-8 md:text-lg md:leading-8"
                 data-aos="fade-right"
                 data-aos-delay="150"
               >
@@ -223,7 +222,7 @@ export default function Home() {
               </p>
 
               <p
-                className="text-dark mb-8 text-lg leading-8"
+                className="text-dark mb-5 md:mb-8 md:text-lg md:leading-8"
                 data-aos="fade-right"
                 data-aos-delay="300"
               >
@@ -265,11 +264,11 @@ export default function Home() {
       <section className="py-6">
         <div className="container">
           <div className="mb-12 m-auto md:w-1/2" data-aos="zoom-in">
-            <h1 className="text-3xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
+            <h1 className="text-2xl font-bold text-center text-dark capitalize mb-4 md:text-4xl">
               Technologies and Tools
             </h1>
 
-            <p className="text-dark text-center">
+            <p className="text-dark text-center text-sm sm:text-base">
               We use the latest technologies and tools to provide the best
               solutions for our customers
             </p>
