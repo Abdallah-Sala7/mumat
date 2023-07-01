@@ -25,7 +25,7 @@ const MainLayout = ({children}) => {
 
       <Navbar />
 
-      <main className='overflow-hidden'>{children}</main>
+      <main className='overflow-hidden pt-24'>{children}</main>
 
       <Footer />
     </>

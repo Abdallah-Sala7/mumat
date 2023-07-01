@@ -31,7 +31,7 @@ import ProjectCard from "../components/ProjectCard";
 export default function Home() {
   return (
     <>
-      <header className="min-h-screen flex items-center py-24">
+      <header className="min-h-screen flex items-center pb-6">
         <div className="container">
           <div className="flex justify-between items-center flex-wrap">
             <div className="flex-1 text-center md:pl-0 md:pr-10 md:text-left">

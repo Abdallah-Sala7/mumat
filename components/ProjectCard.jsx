@@ -10,7 +10,11 @@ const ProjectCard = ({ right, img }) => {
       }`}
       data-aos={right ? "fade-left" : "fade-right"}
     >
-      <div className={`max-w-xs h-full z-10 lg:w-1/3 lg:max-w-max ${right ? "-ml-px": "-mr-px"}`}>
+      <div
+        className={`w-48 h-full z-10 md:w-auto md:max-w-xs lg:w-1/3 lg:max-w-max ${
+          right ? "-ml-px" : "-mr-px"
+        }`}
+      >
         <Image
           src={img}
           alt="projectImg"
@@ -19,24 +23,22 @@ const ProjectCard = ({ right, img }) => {
       </div>
 
       <div
-        className={`from-dark to-blue-900 bg-gradient-to-br text-white py-7 px-8 rounded-3xl xl:my-10 xl:flex-1 ${
+        className={`from-dark to-blue-900 bg-gradient-to-br text-white rounded-xl p-3 md:rounded-3xl md:py-7 md:px-8  xl:my-10 xl:flex-1 ${
           right ? "xl:rounded-r-none" : "xl:rounded-l-none"
         }`}
       >
-        <h1 className="text-4xl font-bold text-primary capitalize mb-2">
+        <h1 className="text-2xl font-bold text-primary capitalize mb-2 md:text-4xl">
           project one
         </h1>
 
-        <p className="">
+        <p className="text-gray-100">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex vitae
           amet, ipsam blanditiis tempora laudantium qui dolores error, illo
           temporibus molestiae atque sunt assumenda, et at vel dolorum dolore
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          nobis sed quidem sit obcaecati optio nam totam, esse non debitis
-          fugiat est dignissimos, harum, qui at id minus odio porro.
         </p>
 
-        <div className="my-7 flex flex-wrap gap-y-3">
+        <div className="my-5 flex flex-wrap gap-y-3 md:my-7">
           <div className="w-1/2 flex-auto">
             <p>Downloads</p>
             <p className="text-lg font-bold"> 161k </p>

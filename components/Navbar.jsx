@@ -87,14 +87,14 @@ const Navbar = () => {
 
           <li>
             <Link
-              href="#"
+              href="portfolio"
               className={`
                 relative font-normal text-white text-lg capitalize p-2 transition-colors
                 after:absolute after:bottom-0 after:left-2 after:h-px after:w-0 after:bg-primary after:transition-all
                 hover:after:w-1/2 hover:text-primary
               `}
             >
-              blogs
+              portfolio
             </Link>
           </li>
 
@@ -127,12 +127,12 @@ const Navbar = () => {
           <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
         </button>
 
-        {
-          showMenu && <div 
+        {showMenu && (
+          <div
             className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-60 z-40 md:hidden"
             onClick={() => setShowMenu(false)}
           ></div>
-        }
+        )}
       </div>
     </nav>
   );

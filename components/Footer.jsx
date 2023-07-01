@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer
       className={`
-      relative z-10 py-5 bg-gradient-to-b from-dark to-primary
+      relative z-10 py-7 bg-gradient-to-b from-dark to-primary
       after:absolute after:inset-0 after:bg-dark after:-z-10 after:bg-opacity-90
     `}
     >

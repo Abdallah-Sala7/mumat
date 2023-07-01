@@ -12,6 +12,9 @@ export {default as heroImg} from "./images/hero.svg";
 export { default as projectImg } from "./images/project_img.webp";
 export { default as project2Img } from "./images/project2_img.webp";
 
+export { default as pervieoImg } from "./images/alimen.jpg";
+
+
 // export gif images
 
 export { default as webDevGif } from "./gif/web-design-layout.gif";
