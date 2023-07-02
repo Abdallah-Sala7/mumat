@@ -9,6 +9,8 @@ module.exports = {
       colors: {
         primary: "#76fce9",
         dark: "#0b132a",
+        dark2: "rgba(11, 19, 42, 0.7)",
+        dark3: "#3a506b",
       },
       container: {
         center: true,

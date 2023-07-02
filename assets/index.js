@@ -14,11 +14,17 @@ export { default as project2Img } from "./images/project2_img.webp";
 
 export { default as pervieoImg } from "./images/alimen.jpg";
 
+export { default as businessmanImg } from "./images/businessman.png";
+
+
 
 // export gif images
 
 export { default as webDevGif } from "./gif/web-design-layout.gif";
 export { default as heroGif } from "./gif/hero.gif";
+export { default as about1Gif } from "./gif/about1.gif";
+export { default as about2Gif } from "./gif/about2.gif";
+export { default as about3Gif } from "./gif/about3.gif";
 
 // export tools images
 
@@ -37,3 +43,4 @@ export { default as androidStudio } from "./images/tool-icon/android_studio.png"
 // export icons
 
 export { default as rightArrowIcon } from "./icons/right_arrow.png";
+export { default as starIcon } from "./icons/star.png";

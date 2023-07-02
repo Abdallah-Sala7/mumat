@@ -7,3 +7,14 @@
     filter: invert(97%) sepia(18%) saturate(3105%) hue-rotate(155deg) brightness(97%) contrast(103%);
   }
 }
+
+.testimonial-slider{
+  padding: 30px 0 !important;
+}
+
+.testimonial-slider .swiper-pagination-bullet{
+  width: 25px;
+  height: 4px;
+  border-radius: 0;
+  background-color: #0b132a;
+}

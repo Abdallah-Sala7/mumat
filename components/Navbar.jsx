@@ -48,7 +48,7 @@ const Navbar = () => {
 
           <li>
             <Link
-              href="#"
+              href="/"
               className={`
                 relative font-normal text-white text-lg capitalize p-2 transition-colors
                 after:absolute after:bottom-0 after:left-2 after:h-px after:w-0 after:bg-primary after:transition-all
@@ -61,7 +61,7 @@ const Navbar = () => {
 
           <li>
             <Link
-              href="#"
+              href="about"
               className={`
                 relative font-normal text-white text-lg capitalize p-2 transition-colors
                 after:absolute after:bottom-0 after:left-2 after:h-px after:w-0 after:bg-primary after:transition-all
@@ -74,7 +74,7 @@ const Navbar = () => {
 
           <li>
             <Link
-              href="#"
+              href="services"
               className={`
                 relative font-normal text-white text-lg capitalize p-2 transition-colors
                 after:absolute after:bottom-0 after:left-2 after:h-px after:w-0 after:bg-primary after:transition-all
