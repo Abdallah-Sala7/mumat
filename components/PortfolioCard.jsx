@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { pervieoImg } from "../assets";
+import { glassesIcon, pervieoImg } from "../assets";
 
 const PortfolioCard = () => {
   return (
@@ -17,20 +17,13 @@ const PortfolioCard = () => {
         </h1>
 
         <span className="transition translate-y-12 duration-700 group-hover:opacity-100 group-hover:translate-y-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="text-white h-10 w-10"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="36"
-              stroke="currentColor"
-              fill="none"
-            ></path>
-          </svg>
+          <Image
+            src={glassesIcon}
+            alt="pervieo glasses"
+            width={500}
+            height={500}
+            className="w-14 h-14 object-contain invert"
+          />
         </span>
       </a>
 
