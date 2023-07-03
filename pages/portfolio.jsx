@@ -11,12 +11,18 @@ const Portfolio = () => {
   return (
     <section className="pb-6">
       <div className="container">
-        <h1
-          className="text-2xl mb-5 font-bold text-dark capitalize md:mb-8 md:text-4xl"
-          data-aos="fade-right"
-        >
-          our latest works
-        </h1>
+        <div className="mb-5 md:mb-8">
+          <h1
+            className="text-2xl mb-2 font-bold text-dark capitalize md:text-4xl"
+            data-aos="fade-right"
+          >
+            our portfolio
+          </h1>
+
+          <p className="text-dark md:text-lg" data-aos="fade-right">
+            Check out our portfolio and see what we can do for you!
+          </p>
+        </div>
 
         <PortfolioTab handleClick={getActiveTab} />
 

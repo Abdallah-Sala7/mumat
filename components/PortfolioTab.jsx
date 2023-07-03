@@ -9,7 +9,7 @@ const PortfolioTab = ({ handleClick }) => {
   };
   return (
     <div
-      className="flex items-center gap-4 flex-wrap justify-center mb-6"
+      className="flex items-center gap-2 flex-wrap justify-center mb-6"
       data-aos="fade-up"
     >
       <button

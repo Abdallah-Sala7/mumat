@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ClaintsCard = () => {
   return (
-    <div className="flex flex-col justify-center items-center p-5 rounded-lg from-gray-50 via-gray-100 to-gray-200 bg-gradient-to-br border-gray-200 border transition-transform duration-1000 hover:-translate-y-2">
+    <div className="flex flex-col justify-center items-center py-8 px-5 rounded-lg from-gray-50 via-gray-100 to-gray-200 bg-gradient-to-br border-gray-200 border transition-transform duration-1000 hover:-translate-y-2">
       <div className="flex gap-1.5 items-center mb-4">
         {Array(3)
           .fill()

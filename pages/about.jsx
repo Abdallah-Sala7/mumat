@@ -15,12 +15,21 @@ const About = () => {
   return (
     <section className="pb-6">
       <div className="container">
-        <h1
-          className="text-2xl mb-8 font-bold text-dark capitalize md:mb-0 md:text-4xl"
-          data-aos="fade-up"
-        >
-          About MUMAT
-        </h1>
+        <div className="mb-5 md:mb-8">
+          <h1
+            className="text-2xl mb-2 font-bold text-dark capitalize md:text-4xl"
+            data-aos="fade-right"
+          >
+            About MUMAT
+          </h1>
+
+          <p
+            className="text-dark md:text-lg"
+            data-aos="fade-right"
+          >
+            Get to know us better and see what we can do for you
+          </p>
+        </div>
 
         <div className="flex flex-wrap items-center mb-8 md:mb-0 ">
           <div className="w-full md:w-1/2" data-aos="fade-up">

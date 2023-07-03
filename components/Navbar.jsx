@@ -100,7 +100,7 @@ const Navbar = () => {
 
           <li>
             <Link
-              href="#"
+              href="contact"
               className={`
                 relative font-normal text-white text-lg capitalize p-2 transition-colors
                 after:absolute after:bottom-0 after:left-2 after:h-px after:w-0 after:bg-primary after:transition-all

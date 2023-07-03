@@ -66,7 +66,7 @@ export default function Home() {
                   text-primary font-medium text-lg ransition-colors flex w-fit mx-auto md:mx-0
                   md:px-8 md:py-4 after:absolute after:inset-0 after:-z-10 after:opacity-20 
                   after:from-dark after:to-primary after:bg-gradient-to-r
-                  after:translate-x-full after:transition-all hover:after:translate-x-0
+                  after:translate-x-full after:transition-all hover:after:translate-x-0 after:duration-700
                 `}
               >
                 Get Started
@@ -241,7 +241,7 @@ export default function Home() {
                   text-primary font-medium text-lg ransition-colors flex w-fit
                   md:px-8 md:py-4 after:absolute after:inset-0 after:-z-10 after:opacity-20 
                   after:from-dark after:to-primary after:bg-gradient-to-r
-                  after:translate-x-full after:transition-all hover:after:translate-x-0
+                  after:translate-x-full after:transition-all hover:after:translate-x-0 after:duration-700
                 `}
               >
                 Get Started

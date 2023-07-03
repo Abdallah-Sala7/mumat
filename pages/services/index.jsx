@@ -6,19 +6,21 @@ const Services = () => {
   return (
     <section className="pb-6">
       <div className="container">
-        <h1
-          className="text-2xl mb-2 font-bold text-dark capitalize md:text-4xl"
-          data-aos="fade-right"
-        >
-         Services
-        </h1>
+        <div className="mb-5 md:mb-8">
+          <h1
+            className="text-2xl mb-2 font-bold text-dark capitalize md:text-4xl"
+            data-aos="fade-right"
+          >
+            our services
+          </h1>
 
-        <h2
-          className="text-lg mb-5 font-medium text-dark capitalize md:mb-8 md:text-xl"
-          data-aos="fade-right"
-        >
-          Explore Our All Services We Offer to customers
-        </h2>
+          <p
+            className="text-dark md:text-lg"
+            data-aos="fade-right"
+          >
+            Explore our all services we offer to customers
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <ServicesCard
