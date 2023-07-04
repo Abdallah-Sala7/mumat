@@ -23,21 +23,18 @@ const About = () => {
             About MUMAT
           </h1>
 
-          <p
-            className="text-dark md:text-lg"
-            data-aos="fade-right"
-          >
+          <p className="text-dark md:text-lg" data-aos="fade-right">
             Get to know us better and see what we can do for you
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center mb-8 md:mb-0 ">
-          <div className="w-full md:w-1/2" data-aos="fade-up">
-            <h2 className="text-xl mb-3 font-medium text-dark capitalize md:text-2xl">
+        <div className="flex gap-5 flex-wrap items-center mb-8 ">
+          <div className="w-full md:flex-1" data-aos="fade-up">
+            <h2 className="text-xl mb-1 font-medium text-dark capitalize md:text-2xl md:mb-3">
               why choose us ?
             </h2>
 
-            <p className="text-slate-500  text-lg leading-8">
+            <p className="text-slate-500  md:text-lg md:leading-8">
               we are a team of highly skilled and experienced developers who are
               capable of developing any kind of software. We are a team of
               highly skilled and experienced developers who are capable of
@@ -45,7 +42,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="w-full md:w-1/2" data-aos="fade-up">
+          <div className="w-full md:flex-1" data-aos="fade-up">
             <Image
               src={about3Gif}
               alt="about"
@@ -56,8 +53,8 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap-reverse items-center mb-8">
-          <div className="w-full md:w-1/2" data-aos="fade-up">
+        <div className="flex gap-5 flex-wrap-reverse items-center mb-8">
+          <div className="w-full md:flex-1" data-aos="fade-up">
             <Image
               src={about1Gif}
               alt="about"
@@ -67,12 +64,12 @@ const About = () => {
             />
           </div>
 
-          <div className="w-full md:w-1/2" data-aos="fade-up">
-            <h2 className="text-xl mb-3 font-medium text-dark capitalize md:text-2xl">
+          <div className="w-full md:flex-1" data-aos="fade-up">
+            <h2 className="text-xl mb-1 font-medium text-dark capitalize md:text-2xl md:mb-3">
               Unlimited skills for your projects
             </h2>
 
-            <p className="text-slate-500  text-lg leading-8">
+            <p className="text-slate-500  md:text-lg md:leading-8">
               The MUMAT is a software development company that provides
               high-quality software services to enterprises with skilled
               developers. We help our clients to build custom software

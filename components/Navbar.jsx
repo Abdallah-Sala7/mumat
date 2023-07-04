@@ -2,9 +2,11 @@ import Image from "next/image";
 
 import Logo from "../assets/images/logo.png";
 import Link from "next/link";
+import {usePathname} from "next/navigation"
 import { useState } from "react";
 
 const Navbar = () => {
+  const currentRoute = usePathname()
   const [showMenu, setShowMenu] = useState(false);
   return (
     <nav className="fixed top-0 left-0 z-40 w-full py-2 shadow-sm bg-dark">
@@ -50,9 +52,14 @@ const Navbar = () => {
             <Link
               href="/"
               className={`
-                relative font-normal text-white text-lg capitalize p-2 transition-colors
-                after:absolute after:bottom-0 after:left-2 after:h-px after:w-0 after:bg-primary after:transition-all
+                relative font-normal text-lg capitalize p-2 transition-colors
+                after:absolute after:bottom-0 after:left-2 after:h-px after:bg-primary after:transition-all
                 hover:after:w-1/2 hover:text-primary
+                ${
+                  currentRoute === "/"
+                    ? "after:w-1/2 text-primary"
+                    : "text-white after:w-0"
+                }
               `}
             >
               home
@@ -63,9 +70,14 @@ const Navbar = () => {
             <Link
               href="about"
               className={`
-                relative font-normal text-white text-lg capitalize p-2 transition-colors
-                after:absolute after:bottom-0 after:left-2 after:h-px after:w-0 after:bg-primary after:transition-all
+                relative font-normal text-lg capitalize p-2 transition-colors
+                after:absolute after:bottom-0 after:left-2 after:h-px after:bg-primary after:transition-all
                 hover:after:w-1/2 hover:text-primary
+                ${
+                  currentRoute === "/about"
+                    ? "after:w-1/2 text-primary"
+                    : "text-white after:w-0"
+                }
               `}
             >
               about us
@@ -76,9 +88,14 @@ const Navbar = () => {
             <Link
               href="services"
               className={`
-                relative font-normal text-white text-lg capitalize p-2 transition-colors
-                after:absolute after:bottom-0 after:left-2 after:h-px after:w-0 after:bg-primary after:transition-all
+                relative font-normal text-lg capitalize p-2 transition-colors
+                after:absolute after:bottom-0 after:left-2 after:h-px after:bg-primary after:transition-all
                 hover:after:w-1/2 hover:text-primary
+                ${
+                  currentRoute === "/services"
+                    ? "after:w-1/2 text-primary"
+                    : "text-white after:w-0"
+                }
               `}
             >
               services
@@ -89,9 +106,14 @@ const Navbar = () => {
             <Link
               href="portfolio"
               className={`
-                relative font-normal text-white text-lg capitalize p-2 transition-colors
-                after:absolute after:bottom-0 after:left-2 after:h-px after:w-0 after:bg-primary after:transition-all
+                relative font-normal text-lg capitalize p-2 transition-colors
+                after:absolute after:bottom-0 after:left-2 after:h-px after:bg-primary after:transition-all
                 hover:after:w-1/2 hover:text-primary
+                ${
+                  currentRoute === "/portfolio"
+                    ? "after:w-1/2 text-primary"
+                    : "text-white after:w-0"
+                }
               `}
             >
               portfolio
@@ -102,9 +124,14 @@ const Navbar = () => {
             <Link
               href="contact"
               className={`
-                relative font-normal text-white text-lg capitalize p-2 transition-colors
-                after:absolute after:bottom-0 after:left-2 after:h-px after:w-0 after:bg-primary after:transition-all
+                relative font-normal text-lg capitalize p-2 transition-colors
+                after:absolute after:bottom-0 after:left-2 after:h-px after:bg-primary after:transition-all
                 hover:after:w-1/2 hover:text-primary
+                ${
+                  currentRoute === "/contact"
+                    ? "after:w-1/2 text-primary"
+                    : "text-white after:w-0"
+                }
               `}
             >
               contact us

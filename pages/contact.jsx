@@ -52,7 +52,7 @@ const Contact = () => {
                   className="w-full p-3 text-lg text-dark border border-dark border-opacity-20 focus:border-opacity-60 transition rounded-md outline-none resize-none h-52"
                 ></textarea>
               </div>
-              <div data-aos="fade-up">
+              <div data-aos="fade-right">
                 <a
                   href="#"
                   className={`

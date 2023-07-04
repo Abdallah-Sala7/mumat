@@ -5,12 +5,11 @@ const ServicesSelect = () => {
   const [selected, setSelected] = useState("web");
 
   return (
-    <div className="flex gap-5 flex-wrap">
+    <div className="flex gap-5 flex-wrap" data-aos="fade-up">
       <button
         className={`w-40 flex-auto flex flex-col items-center gap-4 p-10 rounded-md border border-dark 
         ${selected === "web" ? "border-opacity-60" : "border-opacity-20"}`}
         onClick={() => setSelected("web")}
-        data-aos="fade-up"
       >
         <Image
           src={webDevImg}
@@ -26,7 +25,6 @@ const ServicesSelect = () => {
         className={`w-40 flex-auto flex flex-col items-center gap-4 p-10 rounded-md border border-dark 
         ${selected === "mobile" ? "border-opacity-60" : "border-opacity-20"}`}
         onClick={() => setSelected("mobile")}
-        data-aos="fade-up"
       >
         <Image
           src={mobileAppImg}
@@ -42,7 +40,6 @@ const ServicesSelect = () => {
         className={`w-40 flex-auto flex flex-col items-center gap-4 p-10 rounded-md border border-dark 
         ${selected === "commerce" ? "border-opacity-60" : "border-opacity-20"}`}
         onClick={() => setSelected("commerce")}
-        data-aos="fade-up"
       >
         <Image
           src={mobileAppImg}
